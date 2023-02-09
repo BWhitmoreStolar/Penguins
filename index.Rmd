@@ -1,0 +1,29 @@
+---
+name: "Penguin_Site"
+navbar:
+  title: "My Penguin Site"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Single Trait Distribution"
+      href: Single-Trait-Distribution.html
+    - text: "Relationship Between Multiple Traits"
+      href: Relationship-Between-Multiple-Traits.html
+    - text: "Sexual Dimorphism"
+      href: Sexual-Dimorphism.html
+    - text: "Year Comparison"
+      href: Year-Comparison.html
+output_dir: "."
+output:
+  html_document:
+    theme: cerulean
+    highlight: textmate
+    toc: true 
+    toc_float: true 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
