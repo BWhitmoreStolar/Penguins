@@ -1,0 +1,28 @@
+---
+title: "Single-Trait-Distribution"
+author: "Beth"
+date: "2023-02-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
+```
+## Single Trait Distribution
+<br>
+Difference in body mass among species.
+```{r}
+na_removed_penguins<-penguins %>% filter(is.na(sex)==FALSE)
+view(penguins)
+```
+
+```{r}
+ggplot(penguins)+
+  geom_histogram(mapping=aes(x= body_mass_g, fill=species))+
+  facet_wrap(~species,nrow=3)
+```

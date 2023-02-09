@@ -26,4 +26,12 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Data
+<br>
+This is a dataset of morphological traits of three different penguin species, Adelie, Gentoo and Chinstrap.
+
+![Chinstrap Penguin](https://ejphoto.com/images_ANT/ANT_ChinstrapPenguin08.jpg)
+<br>
+<br>
+
 
